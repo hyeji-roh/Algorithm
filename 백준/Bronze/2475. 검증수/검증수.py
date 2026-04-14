@@ -2,9 +2,4 @@ import sys
 input = sys.stdin.readline
 
 nums = list(map(int, input().split()))
-total = 0
-
-for n in nums:
-    total += n**2
-
-print(total%10)
+print(sum(n*n for n in nums)%10)
